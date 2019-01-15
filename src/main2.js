@@ -1,26 +1,24 @@
-// Funcion de tenplates para mi campeones
-/* global array, arrayKeys, newArrayKeys*/
-const array = Object.values(LOL.data);
-const arrayKeys = Object.values(array[0]);
+const arrayData = Object.values(LOL.data);
+const arrayKeys = Object.values(arrayData[0]);
 const newArrayKeys = Object.keys(arrayKeys[12]);
-const newStats = Object.values(array);
+const newStats = Object.values(arrayData);
 newStats;
 const conteinerChampions = document.getElementById('list-champions');
-const templateListChampions = (array) => {
+const templateListChampions = (arrayData) => {
   let championsList = [];
   let newchampionList = [];
   conteinerChampions.value = '';
-  for (let i = 0; i < array.length; i++) 
-    championsList.push(Object.assign({}, array[i]));
+  for (let i = 0; i < arrayData.length; i++) 
+    championsList.push(Object.assign({}, arrayData[i]));
 
   for (let i = 0; i < championsList.length; i++) {
     newchampionList.push(
       `<div class='blog-card'>   
             <a class='card' id='${championsList[i].id}' href='#modal${i}'>
-            <img class='img-1'src='campeones/${((championsList[i].name).toLowerCase())}.PNG'><br>
+            <img class='img-1'src='campeones/${(championsList[i].name).toLowerCase()}.png'><br>
             <div class='layer'>
-            <img class='img-2' src='imagenes/escudo.PNG'>
-            <h2 class='txt-1'>${(championsList[i].name).toLowerCase()}'</h2><br>
+            <img class='img-2' src='imagenes/escudo.png'>
+            <h2 class='txt-1'>${championsList[i].name}</h2><br>
             <h3 class='txt-2'>"${championsList[i].title}"</h3><br>
             </div></a>
             </div>
@@ -28,8 +26,8 @@ const templateListChampions = (array) => {
         <section class='modal-window' id='modal${i}'>
             <div class='modal-champions' id='${championsList[i].id}'> 
             <a href='#' title='Close' class='modal-close'>X</a>
-            <img class='img-modal'src='anima/${((championsList[i].name).toLowerCase())}.JPG'>
-            <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.PNG'><br>${(championsList[i].name).toLowerCase()}</h1>
+            <img class='img-modal'src='anima/${(championsList[i].name).toLowerCase()}.jpg'>
+            <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.png'><br>${championsList[i].name}</h1>
             <h3 class='modal-text2'>"${ championsList[i].title}"</h3>
             <p class='modal-text3'>${ championsList[i].blurb}<br>
             <br>Sus roles son: ${ championsList[i].tags}.</p>
@@ -47,41 +45,41 @@ const templateListChampions = (array) => {
                 <td class='text-row col'>${ newArrayKeys[0]}</td>
                 <td class='col'>${ championsList[i].stats.hpperlevel}</td>
                 <td class='col'>${ championsList[i].stats.hp}</td>
-                <td class='col'>${window.lol.statFunction(6, array, 1)}</td>
-                <td class='col'>${window.lol.statFunction(12, array, 1)}</td>
-                <td class='col'>${window.lol.statFunction(18, array, 1)}</td>
+                <td class='col'>${window.lol.statFunction(6, arrayData, 1)}</td>
+                <td class='col'>${window.lol.statFunction(12, arrayData, 1)}</td>
+                <td class='col'>${window.lol.statFunction(18, arrayData, 1)}</td>
               </tr>
               <tr class='col'>
                 <td class='text-row col'>${ newArrayKeys[2]}</td>
                 <td class='col'>${ championsList[i].stats.mpperlevel}</td>
                 <td class='col'>${ championsList[i].stats.mp}</td>
-                <td class='col'>${window.lol.statFunction(6, array, 2)}</td>
-                <td class='col'>${window.lol.statFunction(12, array, 2)}</td>
-                <td class='col'>${window.lol.statFunction(18, array, 2)}</td>
+                <td class='col'>${window.lol.statFunction(6, arrayData, 2)}</td>
+                <td class='col'>${window.lol.statFunction(12, arrayData, 2)}</td>
+                <td class='col'>${window.lol.statFunction(18, arrayData, 2)}</td>
               </tr>
               <tr class='col'>
                 <td class='text-row col'>${ newArrayKeys[5]}</td>
                 <td class='col'>${ championsList[i].stats.armorperlevel}</td>
                 <td class='col'>${ championsList[i].stats.armor}</td>
-                <td class='col'>${window.lol.statFunction(6, array, 3)}</td>
-                <td class='col'>${window.lol.statFunction(12, array, 3)}</td>
-                <td class='col'>${window.lol.statFunction(18, array, 3)}</td>
+                <td class='col'>${window.lol.statFunction(6, arrayData, 3)}</td>
+                <td class='col'>${window.lol.statFunction(12, arrayData, 3)}</td>
+                <td class='col'>${window.lol.statFunction(18, arrayData, 3)}</td>
               </tr>
               <tr  class='col'>
                 <td class='text-row col'>${ newArrayKeys[7]}</td>
                 <td class='col'>${ championsList[i].stats.spellblockperlevel}</td>
                 <td class='col'>${ championsList[i].stats.spellblock}</td>
-                <td class='col'>${window.lol.statFunction(6, array, 4)}</td>
-                <td class='col'>${window.lol.statFunction(12, array, 4)}</td>
-                <td class='col'>${window.lol.statFunction(18, array, 4)}</td>
+                <td class='col'>${window.lol.statFunction(6, arrayData, 4)}</td>
+                <td class='col'>${window.lol.statFunction(12, arrayData, 4)}</td>
+                <td class='col'>${window.lol.statFunction(18, arrayData, 4)}</td>
               </tr>
               <tr  class='col'>
                 <td class='text-row col'>${ newArrayKeys[10]}</td>
                 <td class='col'>${ championsList[i].stats.hpregenperlevel}</td>
                 <td class='col'>${ championsList[i].stats.hpregen}</td>
-                <td class='col'>${window.lol.statFunction(6, array, 5)}</td>
-                <td class='col'>${window.lol.statFunction(12, array, 5)}</td>
-                <td class='col'>${window.lol.statFunction(18, array, 5)}</td>
+                <td class='col'>${window.lol.statFunction(6, arrayData, 5)}</td>
+                <td class='col'>${window.lol.statFunction(12, arrayData, 5)}</td>
+                <td class='col'>${window.lol.statFunction(18, arrayData, 5)}</td>
               </tr>
             </table>
           </div>

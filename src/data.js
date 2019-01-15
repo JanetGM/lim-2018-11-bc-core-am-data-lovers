@@ -1,9 +1,9 @@
 // Funcion de ordenar asc y desc
-const sortData = (data, sortBy) => {
-  let newArrayFilter = [];
+const sortData = (data, condition) => {
+  let newArrayCopyData = [];
   for (let i = 0; i < data.length; i++)
-    newArrayFilter.push(Object.assign({}, data[i]));
-  newArrayFilter.sort(
+    newArrayCopyData.push(Object.assign({}, data[i]));
+  newArrayCopyData.sort(
     function(champion1, champion2) {
       if (champion1.name > champion2.name) {
         return 1;
@@ -13,10 +13,10 @@ const sortData = (data, sortBy) => {
       return 0;
     }
   );
-  if (sortBy === '01') {
-    newArrayFilter.reverse();
+  if (condition === '01') {
+    newArrayCopyData.reverse();
   }
-  return newArrayFilter;
+  return newArrayCopyData;
 };
 
 // Funcion de de los 10 mejores campeones

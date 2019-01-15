@@ -1,7 +1,6 @@
 // array de la data de Lol//
 /* global array */
 const array = Object.values(LOL.data);
-
 // Segundo diseño de templates
 const arrayTopTen = lol.getTopTen(array);
 // templatepara el top ten
