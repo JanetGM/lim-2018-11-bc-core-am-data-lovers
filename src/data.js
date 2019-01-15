@@ -74,7 +74,6 @@ const statFunction = (num, array, stats) => {
     }
   }
 };
-
 window.lol = {
   sortData,
   getTopTen,

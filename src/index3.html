@@ -8,49 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="thirst-page">
-      <div class="section-video">
-          <video class="video-1" src="anima/animated.webm" autoplay loop preload="auto" muted></video>
-      </div>
-    <header class="first-header">
-        <img src="imagenes/logo2.png" alt="" class="logo1">
-        <input class="menu-bar" type="checkbox" id="menu-bar">
-        <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
-        <nav class="menu-nav">
-          <ul class="menu-ul">
-            <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
-            <li class="li-menu"><a class="link-menu" href="index2.html">Top Ten</a></li>
-            <li class="li-menu"><a class="link-menu" href="index3.html">Campeones</a></li>
-            <li><a class="link-menu" href="#">Modo de juego</a></li>
-            <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
-            <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="" class="img-count"></a></li>
-          </ul>
-        </nav>
+    <header class="first-header2">
+      <img src="imagenes/logo3.png" alt="logo de league of legends" class="logo1">
+      <input class="menu-bar" type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="icono de menu" class="img-menu"></label>
+      <nav class="menu-nav">
+       <ul class="menu-ul">
+        <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
+         <li class="li-menu"><a class="link-menu" href="index2.html" id="top-ten">Top Ten</a></li>
+         <li class="li-menu"><a class="link-menu" href="index3.html">Campeones</a></li>
+         <li class="li-menu"><a class="link-menu" href="index4.html">Modo de juego</a></li>
+         <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
+         <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="icono de enlace para cuenta" class="img-count"></a></li>
+       </ul>
+      </nav>
     </header>
     <section class="section-champions" id="section-champions"> 
       <div class="nav">
         <div class="nav-filter">
           <form class="filter-rols">
-            <input type="checkbox" id="Marksman" class="checkbox" value ="Marksman">
-              <label for="Marksman" class="label">Tirador</label>
-            <input type="checkbox" id="Support" class="checkbox" value ="Support">
-              <label for="Support" class="label">Apoyo</label>
-             <input type="checkbox" id="Mage" class="checkbox" value ="Mage">
-              <label for="Mage" class="label">Mago</label>
-            <input type="checkbox" id="Tank" class="checkbox" value ="Tank">
-              <label for="Tank" class="label">Tanque</label>
-            <input type="checkbox" id="Fighter" class="checkbox" value ="Fighter">
-              <label for="Figther" class="label">Luchador</label>
-            <input type="checkbox" id="Assassin" class="checkbox" value ="Assassin">
-              <label for="Assassin" class="label">Asesino</label>
-            <select class="filter-list" id="order-champions">
-              <option value="00">A-Z</option>
-              <option value="01">Z-A</option>
-            </select>
+            <ul class="menu-ul-nav">
+              <li class="li-menu"><input type="checkbox" id="Marksman" class="checkbox" value ="Marksman">
+               <label for="Marksman" class="label">Tirador</label></li>
+              <li class="li-menu"><input type="checkbox" id="Support" class="checkbox" value ="Support">
+               <label for="Support" class="label">Apoyo</label></li>
+              <li class="li-menu"><input type="checkbox" id="Mage" class="checkbox" value ="Mage">
+               <label for="Mage" class="label">Mago</label></li>
+              <li class="li-menu"><input type="checkbox" id="Tank" class="checkbox" value ="Tank">
+               <label for="Tank" class="label">Tanque</label></li>
+              <li class="li-menu"><input type="checkbox" id="Fighter" class="checkbox" value ="Fighter">
+               <label for="Figther" class="label">Luchador</label></li>
+              <li class="li-menu"><input type="checkbox" id="Assassin" class="checkbox" value ="Assassin">
+               <label for="Assassin" class="label">Asesino</label></li>
+              <li class="li-menu"><select class="filter-list" id="order-champions">
+               <option value="00">A-Z</option>
+               <option value="01">Z-A</option></select></li>   
+            </ul>
           </form>
          </div> 
-      </div>
-      <div class="box-2" id="list-champions" >
-
+        </div>
+       <div class="box-2" id="list-champions" >
       </div> 
     </section>
     <script src="data/lol/lol.js"></script>
