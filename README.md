@@ -21,12 +21,12 @@
 Para definir cual sería la funcionalidad de la página seguimos los siguientes pasos :
 1.  Planificación
 - Organizar nuestro tablero canvas con las primeras actividades de la entrevista .
-![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\tablero-canvas-start.jpg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG/src/imagenes/tablero-canvas-start.jpg)
 2. Crear nuestro esquema de entrevista .
 ![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG/src/imagenes/preguntas.PNG)
 3. Buscar usuarios que jueguen LOL .
 4. Entrevista al usuario .
-![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\preguntas.PNG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG/src/imagenes/preguntas.PNG)
 
 5. Extraer las historia de usuario
 ## Historia de Usuario
