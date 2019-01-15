@@ -8,7 +8,6 @@ newStats;
 const conteinerChampions = document.getElementById('list-champions');
 const templateListChampions = (array) => {
   let championsList = [];
-  console.log(championsList);
   let newchampionList = [];
   conteinerChampions.value = '';
   for (let i = 0; i < array.length; i++) 
@@ -16,13 +15,12 @@ const templateListChampions = (array) => {
 
   for (let i = 0; i < championsList.length; i++) {
     newchampionList.push(
-
       `<div class='blog-card'>   
             <a class='card' id='${championsList[i].id}' href='#modal${i}'>
-            <img class='img-1'src='campeones/${championsList[i].name}.PNG'><br>
+            <img class='img-1'src='campeones/${((championsList[i].name).toLowerCase())}.PNG'><br>
             <div class='layer'>
             <img class='img-2' src='imagenes/escudo.PNG'>
-            <h2 class='txt-1'>${championsList[i].name}</h2><br>
+            <h2 class='txt-1'>${(championsList[i].name).toLowerCase()}'</h2><br>
             <h3 class='txt-2'>"${championsList[i].title}"</h3><br>
             </div></a>
             </div>
@@ -30,8 +28,8 @@ const templateListChampions = (array) => {
         <section class='modal-window' id='modal${i}'>
             <div class='modal-champions' id='${championsList[i].id}'> 
             <a href='#' title='Close' class='modal-close'>X</a>
-            <img class='img-modal'src='anima/${championsList[i].name}.JPG'>
-            <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.PNG'><br>${championsList[i].name}</h1>
+            <img class='img-modal'src='anima/${((championsList[i].name).toLowerCase())}.JPG'>
+            <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.PNG'><br>${(championsList[i].name).toLowerCase()}</h1>
             <h3 class='modal-text2'>"${ championsList[i].title}"</h3>
             <p class='modal-text3'>${ championsList[i].blurb}<br>
             <br>Sus roles son: ${ championsList[i].tags}.</p>
