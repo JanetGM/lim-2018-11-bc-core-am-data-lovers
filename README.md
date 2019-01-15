@@ -23,7 +23,7 @@ Para definir cual sería la funcionalidad de la página seguimos los siguientes 
 - Organizar nuestro tablero canvas con las primeras actividades de la entrevista .
 ![image](\src\imagenes\tablero-canvas-start.jpg)
 2. Crear nuestro esquema de entrevista .
-![image](\src\imagenes\preguntas.PNG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG/src/imagenes/preguntas.PNG)
 3. Buscar usuarios que jueguen LOL .
 4. Entrevista al usuario .
 ![image](\src\imagenes\preguntas.PNG)
