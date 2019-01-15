@@ -21,12 +21,12 @@
 Para definir cual sería la funcionalidad de la página seguimos los siguientes pasos :
 1.  Planificación
 - Organizar nuestro tablero canvas con las primeras actividades de la entrevista .
-![image](\src\imagenes\tablero-canvas-start.jpg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\tablero-canvas-start.jpg)
 2. Crear nuestro esquema de entrevista .
 ![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG/src/imagenes/preguntas.PNG)
 3. Buscar usuarios que jueguen LOL .
 4. Entrevista al usuario .
-![image](\src\imagenes\preguntas.PNG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\preguntas.PNG)
 
 5. Extraer las historia de usuario
 ## Historia de Usuario
@@ -43,22 +43,22 @@ por rol para saber que campeón usar en determinado equipo de juego.
  
 En base a los requerimientos
 - Planificar el tablero canvas en base a las historia de usuario.
-![image](\src\imagenes\canvas-historias.jpeg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\canvas-historias.jpeg)
 
 
 ## Sketch
 - Prototipo de Baja calidad
-![image](\src\imagenes\numero1.jpeg)
-![image](\src\imagenes\numero2.jpeg)
-![image](\src\imagenes\numero3.jpeg)
-![image](\src\imagenes\numero4.jpeg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\numero1.jpeg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\numero2.jpeg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\numero3.jpeg)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\numero4.jpeg)
 ## Diseño de Interfaz del Usuario
 - Prototipo de Alta calidad
-![image](\src\imagenes\pagina1.JPG)
-![image](\src\imagenes\pagina2.1.JPG)
-![image](\src\imagenes\paginaDos.JPG)
-![image](\src\imagenes\pagina3.JPG)
-![image](\src\imagenes\pagina4.JPG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\pagina1.JPG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\pagina2.1.JPG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\paginaDos.JPG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\pagina3.JPG)
+![image](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/blob/developmentJG\src\imagenes\pagina4.JPG)
 
 ## Zeplin
 - Versión Escritorio 
