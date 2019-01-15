@@ -1,6 +1,38 @@
 # Data Lovers - League of Legends
 ## Team : Nataly Jallo Arana ft Janet Gutierrez Montalban
 ### Squad : Undefined
+<<<<<<< HEAD
+***
+## Indice
+* [Definición del producto](#Definicion_del_producto)
+* [Historia de usuario](#Historia_de_usuario)
+* [Sketch](#Sketch)
+* [Diseño de Interfaz del Usuario](#Diseño_de_Interfaz_del_Usuario)
+* [Zeplin](#Zeplin)
+* [Problemas detectados en test](#Problemas_detectados_en_test)
+* [Data ](#Data)
+* [Planificacion](#Planificación)
+* [League of Legends](#¿Qué_es_League_of_legends?)
+
+***
+## Definición del Producto
+
+"Nombre de la página" es una  página que permite a los jugadores de LOL encontrar información detallada de sus campeones como :
+- Cuales son los más fuertes contamos con un Top Ten
+- Los tipos de campeones que existen
+- Los datos específicos de cada campeón
+- Cuánto aumentar el poder de ataque cuando avanza su nivel.
+
+
+
+
+## Planificación
+- Uso del tablero canvas -Para la creación de las historias de usuarios
+![imagen]()
+## Data Escogida  :  League of Leguends
+![data](http://www.pngall.com/wp-content/uploads/2016/05/League-of-Legends-PNG-Images.png)
+
+=======
 ***
 ## Tabla de Contenido 
 * [League of Legends](#¿Qué_es_League_of_legends?)
@@ -13,6 +45,7 @@
 
 ***
 ![image](https://steemitimages.com/DQmNe2UXvD1Yi5LRL2DZMMP5MZwBTb5xXCX254VL9P2qNBh/LOL-portada.jpg)
+>>>>>>> 32d8c8a6461c339c489b6e3fb446bd20cc2c5d2a
 ### ¿Qué es League of legends?
 
 * League of Legends es un juego competitivo en línea de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol. Dos equipos de poderosos campeones, cada uno con un diseño y estilo de juegos únicos, compiten cara a cara a través de diversos campos de batalla y modos de juego. Con un plantel de campeones en constante expansión, actualizaciones frecuentes y un emocionante panorama competitivo, League of Legends ofrece posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad.
