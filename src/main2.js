@@ -1,19 +1,28 @@
-const arrayData = Object.values(LOL.data);
-const arrayKeys = Object.values(arrayData[0]);
-const newArrayKeys = Object.keys(arrayKeys[12]);
-const newStats = Object.values(arrayData);
-newStats;
-const conteinerChampions = document.getElementById('list-champions');
-const templateListChampions = (arrayData) => {
-  let championsList = [];
-  let newchampionList = [];
-  conteinerChampions.value = '';
-  for (let i = 0; i < arrayData.length; i++) 
-    championsList.push(Object.assign({}, arrayData[i]));
+fetch('https://raw.githubusercontent.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers/master/src/data/lol/lol.json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let arrayFetch = Object.values(data.data);
+    containerFunction(arrayFetch);
+  });
 
-  for (let i = 0; i < championsList.length; i++) {
-    newchampionList.push(
-      `<div class='blog-card'>   
+function containerFunction(arrayData) {
+  const arrayKeys = Object.values(arrayData[0]);
+  const newArrayKeys = Object.keys(arrayKeys[12]);
+  const newStats = Object.values(arrayData);
+  newStats;
+  const conteinerChampions = document.getElementById('list-champions');
+  const templateListChampions = (arrayData) => {
+    let championsList = [];
+    let newchampionList = [];
+    conteinerChampions.value = '';
+    for (let i = 0; i < arrayData.length; i++)
+      championsList.push(Object.assign({}, arrayData[i]));
+
+    for (let i = 0; i < championsList.length; i++) {
+      newchampionList.push(
+        `<div class='blog-card'>   
             <a class='card' id='${championsList[i].id}' href='#modal${i}'>
             <img class='img-1'src='campeones/${(championsList[i].name).toLowerCase()}.png'><br>
             <div class='layer'>
@@ -84,37 +93,38 @@ const templateListChampions = (arrayData) => {
             </table>
           </div>
         </section>`
-    );
-  }
-  conteinerChampions.innerHTML = newchampionList.join('');
-};
+      );
+    }
+    conteinerChampions.innerHTML = newchampionList.join('');
+  };
 
-templateListChampions(array);
+  templateListChampions(arrayData);
 
-// filtrado
-const valuesCheckBox = document.getElementsByClassName('checkbox');
-const checkbox = Object.values(valuesCheckBox);
-const filter = (arrayTag) => {
-  let tagChoices = [];
-  arrayTag.forEach(tag => {
-    tag.addEventListener('change', () => {
-      if (tag.checked === true) {
-        tagChoices.push(tag.value);
-      } else {
-        let element = tagChoices.indexOf(tag.value);
-        tagChoices.splice(element, 1);
-        templateListChampions(array);
-      }
-      templateListChampions(window.lol.dataFilter(array, tagChoices));
+  // filtrado
+  const valuesCheckBox = document.getElementsByClassName('checkbox');
+  const checkbox = Object.values(valuesCheckBox);
+  const filter = (arrayTag) => {
+    let tagChoices = [];
+    arrayTag.forEach(tag => {
+      tag.addEventListener('change', () => {
+        if (tag.checked === true) {
+          tagChoices.push(tag.value);
+        } else {
+          let element = tagChoices.indexOf(tag.value);
+          tagChoices.splice(element, 1);
+          templateListChampions(array);
+        }
+        templateListChampions(window.lol.dataFilter(array, tagChoices));
+      });
     });
+  };
+
+  filter(checkbox);
+
+  // Funcion de ordenar data de ascendente y descente
+  const sortBy = document.getElementById('order-champions');
+  sortBy.addEventListener('change', () => {
+    const listenSortBy = sortBy.value;
+    templateListChampions(window.lol.sortData(array, listenSortBy));
   });
-};
-
-filter(checkbox);
-
-// Funcion de ordenar data de ascendente y descente
-const sortBy = document.getElementById('order-champions');
-sortBy.addEventListener('change', () => {
-  const listenSortBy = sortBy.value;
-  templateListChampions(window.lol.sortData(array, listenSortBy));
-});
+}
